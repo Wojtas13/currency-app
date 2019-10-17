@@ -1,0 +1,44 @@
+@import '../../../index.scss';
+
+.form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  @media (min-width: 480px) {
+    // justify-content: space-between;
+  }
+
+  &:first-child {
+    width: 100%;
+    border-bottom: 2px solid $primary;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+
+  .input-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .label {
+      margin-left: 10px;
+      margin-bottom: 5px;
+    }
+
+    .input {
+      font-size: 1.3em;
+      color: $secondary;
+      padding: 10px;
+      border-radius: 5px;
+      width: 100%;
+      height: 50px;
+      display: inline-block;
+      margin-bottom: 20px;
+
+      @media (min-width: 480px) {
+        // width: 280px;
+      }
+    }
+  }
+}

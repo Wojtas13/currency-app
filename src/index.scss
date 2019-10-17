@@ -1,0 +1,30 @@
+$black: #000;
+$primary: #b00000;
+$secondary: #212126;
+$white: #fff;
+
+@mixin bgGradient {
+  background-image: linear-gradient(
+    to left top,
+    #b00000,
+    #970036,
+    #6a1a4b,
+    #3b2544,
+    #212126
+  );
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: $white;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
